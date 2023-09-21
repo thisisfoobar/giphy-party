@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Giphy Party!</title>
+  </head>
+
+  <body class="bg-dark bg-gradient">
+    <div class="text-center text-white">
+      <h1>GIPHY Party!</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+      <form id="searchForm" class="form-inline justify-content-center mb-4">
+        <div>
+          <input
+            class="form-control mr-2"
+            type="text"
+            id="searchInput"
+            placeholder="Keyword or Phrase"
+            required
+          />
+        </div>
+        <div>
+          <input
+            id="searchBtn"
+            type="submit"
+            value="Search GIPHY!"
+            class="btn btn-outline-primary form-control"
+          />
+        </div>
+      </form>
+      <div class="ml-2">
+        <button id="rmvImgs" class="btn btn-danger">Remove Images</button>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div id="gifDisplay" class="row justify-content-left pl-10 mr-10"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
